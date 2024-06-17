@@ -1,0 +1,40 @@
+.mainContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.logoContainer {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.logoContainer:hover {
+  transform: scale(1.04);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.navListItem {
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.navListItem:hover {
+  transform: scale(1.04);
+}
+
+.currentNav {
+  border-bottom: 2px solid white;
+}
