@@ -1,0 +1,111 @@
+.outerContainer {
+  width: 100%;
+  /* background-color: rgb(5, 8, 22); */
+  background-color: aqua;
+  border: 1px solid rgba(170, 166, 195, 0.3);
+  height: 90vh;
+}
+
+.mainContainer {
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .mainContainer {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mainContainer {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+}
+
+.leftMainContainer {
+  background-color: chartreuse;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text1 {
+  color: lightblue;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.text2 {
+  color: lightblue;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.myName {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 400px) {
+  .myName {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .myName {
+    margin-bottom: 15px;
+  }
+}
+
+.text4 {
+  color: lightblue;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.text5 {
+  color: white;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.btnMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: burlywood;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 800px) {
+  .btn {
+    padding: 10px 20px;
+    margin-top: 80px;
+    font-size: 18px;
+  }
+}
+
+.rightMainContainer {
+  background-color: brown;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
