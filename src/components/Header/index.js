@@ -9,41 +9,43 @@ function CommonHeader() {
   };
 
   return (
-    <div className={style.mainContainer}>
-      <div className={style.logoContainer}>Shubham Solat</div>
-      <div className={style.navContainer}>
-        <li
-          className={`${style.navListItem} ${
-            activeNav === 1 ? style.currentNav : ""
-          }`}
-          onClick={() => handleNavClick(1)}
-        >
-          Home
-        </li>
-        <li
-          className={`${style.navListItem} ${
-            activeNav === 2 ? style.currentNav : ""
-          }`}
-          onClick={() => handleNavClick(2)}
-        >
-          About
-        </li>
-        <li
-          className={`${style.navListItem} ${
-            activeNav === 3 ? style.currentNav : ""
-          }`}
-          onClick={() => handleNavClick(3)}
-        >
-          Project
-        </li>
-        <li
-          className={`${style.navListItem} ${
-            activeNav === 4 ? style.currentNav : ""
-          }`}
-          onClick={() => handleNavClick(4)}
-        >
-          Contact
-        </li>
+    <div className={style.outerContainer}>
+      <div className={style.mainContainer}>
+        <div className={style.logoContainer}>Shubham Solat</div>
+        <div className={style.navContainer}>
+          <li
+            className={`${style.navListItem} ${
+              activeNav === 1 ? style.currentNav : ""
+            }`}
+            onClick={() => handleNavClick(1)}
+          >
+            Home
+          </li>
+          <li
+            className={`${style.navListItem} ${
+              activeNav === 2 ? style.currentNav : ""
+            }`}
+            onClick={() => handleNavClick(2)}
+          >
+            About
+          </li>
+          <li
+            className={`${style.navListItem} ${
+              activeNav === 3 ? style.currentNav : ""
+            }`}
+            onClick={() => handleNavClick(3)}
+          >
+            Project
+          </li>
+          <li
+            className={`${style.navListItem} ${
+              activeNav === 4 ? style.currentNav : ""
+            }`}
+            onClick={() => handleNavClick(4)}
+          >
+            Contact
+          </li>
+        </div>
       </div>
     </div>
   );

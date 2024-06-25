@@ -1,40 +1,79 @@
+.outerContainer {
+  width: 100%;
+  background-color: rgb(5, 8, 22);
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(170, 166, 195, 0.3);
+}
+
 .mainContainer {
   display: flex;
-  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .mainContainer {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mainContainer {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
 }
 
 .logoContainer {
-  margin-left: 20px;
-  font-size: 18px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 500px) {
+  .logoContainer {
+    font-size: 18px;
+    font-weight: 700;
+  }
 }
 
 .logoContainer:hover {
-  transform: scale(1.04);
+  color: lightblue;
 }
 
 .navContainer {
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
-  margin-right: 20px;
-  font-size: 18px;
 }
 
 .navListItem {
   list-style: none;
-  margin: 10px;
+  margin-left: 10px;
+  color: lightblue;
+  font-size: 16px;
   cursor: pointer;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 500px) {
+  .navListItem {
+    font-size: 18px;
+    margin-left: 20px;
+  }
 }
 
 .navListItem:hover {
-  transform: scale(1.04);
+  color: white;
 }
 
 .currentNav {
-  border-bottom: 2px solid white;
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
 }
