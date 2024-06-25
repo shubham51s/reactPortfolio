@@ -1,8 +1,5 @@
 .outerContainer {
   width: 100%;
-  /* background-color: rgb(5, 8, 22); */
-  background-color: aqua;
-  border: 1px solid rgba(170, 166, 195, 0.3);
   height: 90vh;
 }
 
@@ -30,7 +27,7 @@
 }
 
 .leftMainContainer {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -92,6 +89,7 @@
   padding: 8px 10px;
   margin-top: 50px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
@@ -103,9 +101,39 @@
 }
 
 .rightMainContainer {
-  background-color: brown;
+  /* background-color: brown; */
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.profileImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 400px) {
+  .profileImg {
+    margin-left: 5px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .profileImg {
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .profileImg {
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+  }
 }

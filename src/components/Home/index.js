@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./homecomponent.module.css";
+import profileImg from "../../assets/profile picture gif.gif";
 
 function HomeComp() {
   return (
@@ -23,7 +24,9 @@ function HomeComp() {
           </div>
         </div>
         <div className={style.rightMainContainer}>
-          <div className={style.rightContent}>Right Container</div>
+          <div className={style.rightContent}>
+            <img className={style.profileImg} src={profileImg} alt="profile" />
+          </div>
         </div>
       </div>
     </div>
