@@ -94,7 +94,6 @@
 }
 
 .btn:hover {
-  /* background-color: rgb(5, 38, 104); */
   background-color: white;
   color: rgb(0, 87, 255);
   border: 1px solid rgb(0, 87, 255);
