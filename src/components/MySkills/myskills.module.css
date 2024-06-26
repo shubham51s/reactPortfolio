@@ -49,15 +49,41 @@
 .skillsContent {
   width: 100%;
   display: flex;
-  /* justify-content: center; */
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
   padding: 10px;
 }
 
+@media screen and (min-width: 600px) {
+  .skillsContent {
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .skillsContent {
+    gap: 50px;
+  }
+}
+
 .imageMain {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width: 500px) {
+  .imageMain {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .imageMain {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .skillImg {
