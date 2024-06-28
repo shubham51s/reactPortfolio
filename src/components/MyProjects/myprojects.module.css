@@ -51,16 +51,17 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  border-radius: 10px;
 }
 
 .cardList {
   width: 45%;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border-radius: 10px; */
 }
 
 .cardList:hover {
   border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(14, 10, 10, 0.909);
 }
 
 @media screen and (min-width: 500px) {
@@ -77,12 +78,14 @@
 
 .projectImg {
   width: 100%;
+  height: auto;
   max-width: 100%;
 }
 
 .projectName {
   margin-left: 10px;
   margin-top: 2px;
+  background-color: inherit;
 }
 
 @media screen and (min-width: 500px) {
@@ -108,6 +111,7 @@
   .projectDetail {
     margin-top: 5px;
     font-size: 14px;
+    background-color: inherit;
   }
 }
 

@@ -10,21 +10,30 @@ function MyProjectComp() {
           <div className={style.cardList}>
             <img
               className={style.projectImg}
-              src="https://play-lh.googleusercontent.com/BPaFHvXjBylF5WXakReROnU7OU0qYxXwz0jpRcT6SYHYRUBSs9664C8DoM85M1JlMgqD"
+              src="https://download.logo.wine/logo/Reddit/Reddit-Logo.wine.png"
               alt="ixigo"
             />
             <h3 className={style.projectName}>Ixigo Clone</h3>
-            <p className={style.projectDetail}>Description about project</p>
+            <p className={style.projectDetail}>
+              Created Ixigo clone for checking / booking available flights,
+              trains & hotels with added functionality of offers, sorting,
+              searching & filters for seamless user experience.
+            </p>
             <button className={style.projectBtn}>View Project</button>
           </div>
           <div className={style.cardList}>
             <img
               className={style.projectImg}
-              src="https://play-lh.googleusercontent.com/BPaFHvXjBylF5WXakReROnU7OU0qYxXwz0jpRcT6SYHYRUBSs9664C8DoM85M1JlMgqD"
+              src="https://download.logo.wine/logo/Reddit/Reddit-Logo.wine.png"
               alt="ixigo"
             />
             <h3 className={style.projectName}>Reddit Clone</h3>
-            <p className={style.projectDetail}>Description about project</p>
+            <p className={style.projectDetail}>
+              Created Reddit clone where user can login or signup, add new post,
+              edit or delete post, upvote and downvote on posts also user can
+              add or delete comment on posts, user can change theme, can be used
+              in desktop, mobiles, tablet screen for seamless user experience.
+            </p>
             <button className={style.projectBtn}>View Project</button>
           </div>
         </div>
