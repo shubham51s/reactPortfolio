@@ -2,6 +2,7 @@ import React from "react";
 import CommonHeader from "./components/Header";
 import HomeComp from "./components/Home";
 import MySkillsComp from "./components/MySkills";
+import MyProjectComp from "./components/MyProjects";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <CommonHeader />
       <HomeComp />
       <MySkillsComp />
+      <MyProjectComp />
     </>
   );
 }

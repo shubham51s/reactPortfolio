@@ -27,7 +27,6 @@
 }
 
 .leftMainContainer {
-  /* background-color: chartreuse; */
   flex-grow: 1;
   display: flex;
   justify-content: center;
