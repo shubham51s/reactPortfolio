@@ -56,18 +56,11 @@
 .cardList {
   width: 45%;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  /* border-radius: 10px; */
 }
 
 .cardList:hover {
   border: 1px solid rgba(255, 255, 255, 1);
   background-color: rgba(14, 10, 10, 0.909);
-}
-
-@media screen and (min-width: 500px) {
-  .cardList {
-    width: 35%;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -84,42 +77,14 @@
 
 .projectName {
   margin-left: 10px;
-  margin-top: 2px;
+  margin-top: 5px;
   background-color: inherit;
-}
-
-@media screen and (min-width: 500px) {
-  .projectName {
-    margin-top: 3px;
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .projectName {
-    margin-top: 5px;
-    font-size: 22px;
-  }
 }
 
 .projectDetail {
   margin-left: 10px;
   font-size: 12px;
-}
-
-@media screen and (min-width: 500px) {
-  .projectDetail {
-    margin-top: 5px;
-    font-size: 14px;
-    background-color: inherit;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .projectDetail {
-    margin-top: 5px;
-    font-size: 16px;
-  }
+  margin-top: 10px;
 }
 
 .projectBtn {
@@ -135,14 +100,34 @@
 }
 
 @media screen and (min-width: 500px) {
+  .projectName {
+    margin-top: 3px;
+    font-size: 18px;
+  }
   .projectBtn {
     margin-top: 15px;
     font-size: 14px;
     border-radius: 5px;
     padding: 4px;
   }
+  .cardList {
+    width: 35%;
+  }
+  .projectDetail {
+    margin-top: 5px;
+    font-size: 14px;
+    background-color: inherit;
+  }
 }
 @media screen and (min-width: 1000px) {
+  .projectName {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+  .projectDetail {
+    margin-top: 5px;
+    font-size: 16px;
+  }
   .projectBtn {
     margin-top: 20px;
     font-size: 14px;
