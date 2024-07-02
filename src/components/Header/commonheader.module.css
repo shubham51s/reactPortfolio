@@ -1,6 +1,6 @@
 .outerContainer {
   width: 100%;
-  background-color: rgb(5, 8, 22);
+  /* background-color: rgb(5, 8, 22); */
   margin-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(170, 166, 195, 0.3);
@@ -35,6 +35,72 @@
   font-weight: 700;
 }
 
+.logoAnime {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 500px) {
+  .logoAnime {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.logoAnime span {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  animation: animate 2s linear infinite;
+}
+
+.logoAnime span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.logoAnime span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.logoAnime span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.logoAnime span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.logoAnime span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.logoAnime span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.logoAnime span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    color: red;
+    filter: blur(2px);
+    box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff,
+      0 0 400px #00b3ff;
+  }
+  5%,
+  95% {
+    color: white;
+    filter: blur(0px);
+    box-shadow: none;
+  }
+}
+
 @media screen and (min-width: 500px) {
   .logoContainer {
     font-size: 18px;
@@ -46,9 +112,21 @@
   color: lightblue;
 }
 
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #cdc8c8;
+}
+
+.name:hover {
+  color: white;
+  transition: 1s;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 120px #fff, 0 0 120px #fff;
+}
+
 .navContainer {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 

@@ -5,7 +5,6 @@
   width: 100%;
   height: 100vh;
   max-height: 100vh;
-  background-color: yellow;
 }
 
 .mainContainer {
@@ -15,37 +14,32 @@
   align-items: center;
   width: 90%;
   height: 100%;
-  background-color: lightblue;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .headingMain {
-  margin-top: 80px;
   font-size: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  margin-top: 70px;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 500px) {
   .headingMain {
     font-size: 30px;
-    margin-top: 80px;
-    margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 800px) {
   .headingMain {
     font-size: 36px;
-    margin-top: 100px;
-    margin-bottom: 60px;
   }
-}
-
-.mainContent {
-  background-color: blueviolet;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .leftContent {
@@ -55,7 +49,7 @@
 }
 
 .img {
-  width: 70%;
+  width: 60%;
 }
 
 .rightContent {
@@ -66,9 +60,9 @@
 }
 
 .userDetails {
-  width: 85%;
+  width: 95%;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
   border: 1px solid grey;
   border-radius: 5px;
@@ -94,7 +88,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .message {
-  width: 85%;
+  width: 95%;
   display: flex;
   gap: 10px;
   border: 1px solid grey;
@@ -110,23 +104,24 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .buttonMain {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 800px) {
   .message {
-    width: 80%;
+    width: 90%;
   }
 
   .userDetails {
-    width: 80%;
+    width: 90%;
   }
 
   .buttonMain {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -147,11 +142,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .submitBtn {
   padding: 7px 10px;
   border-radius: 5px;
-  background-color: blue;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   border: none;
+  background-color: blue;
 }
 
 .submitBtn:hover {

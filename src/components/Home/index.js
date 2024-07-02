@@ -14,9 +14,12 @@ function HomeComp() {
               <span> Shubham Solat</span>
             </h2>
             <div>
-              <h3 className={style.text5}>
+              {/* <h3 className={style.text5}>
                 <span className={style.text4}>A </span>Full Stack Developer
-              </h3>
+              </h3> */}
+              <div className={style.animationTxt}>
+                A <span></span>
+              </div>
               <div className={style.btnMain}>
                 <button className={style.btn}>Contact Me</button>
               </div>

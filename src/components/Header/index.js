@@ -11,7 +11,18 @@ function CommonHeader() {
   return (
     <div className={style.outerContainer}>
       <div className={style.mainContainer}>
-        <div className={style.logoContainer}>Shubham Solat</div>
+        {/* <div className={style.logoContainer}>
+          <span className={style.name}>Shubham Solat</span>
+        </div> */}
+        <div className={style.logoAnime}>
+          <span>S</span>
+          <span>h</span>
+          <span>u</span>
+          <span>b</span>
+          <span>h</span>
+          <span>a</span>
+          <span>m </span>
+        </div>
         <div className={style.navContainer}>
           <li
             className={`${style.navListItem} ${
