@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./contactme.module.css";
 import PersonIcon from "@mui/icons-material/Person";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 function ContactComp() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [num, setNum] = useState();
+
   return (
     <div className={style.outerContainer}>
       <div className={style.mainContainer}>
@@ -22,6 +26,8 @@ function ContactComp() {
               <PersonIcon />
               <input
                 className={style.userInput}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 type="text"
                 placeholder="Name"
               />
@@ -30,6 +36,8 @@ function ContactComp() {
               <MarkunreadIcon />
               <input
                 className={style.userInput}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 type="text"
                 placeholder="Email"
               />
@@ -37,18 +45,17 @@ function ContactComp() {
             <div className={style.userDetails}>
               <LocalPhoneIcon />
               <input
-                className={style.userInput}
-                type="text"
+                className={style.numberInput}
+                value={num}
+                onChange={(e) => setNum(e.target.value)}
+                type="number"
+                maxLength={10}
                 placeholder="Mobile Number"
               />
             </div>
             <div className={style.message}>
-              <LocalPhoneIcon />
-              <input
-                className={style.messageInp}
-                type="textarea"
-                placeholder="Message"
-              />
+              <LocalPhoneIcon className={style.messageIcon} />
+              <textarea className={style.messageInp} placeholder="Message" />
             </div>
             <div className={style.buttonMain}>
               <button className={style.submitBtn}>Submit</button>
