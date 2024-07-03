@@ -5,6 +5,7 @@ import MySkillsComp from "./components/MySkills";
 import MyProjectComp from "./components/MyProjects";
 import AboutComp from "./components/About";
 import ContactComp from "./components/ContactMe";
+import FooterComp from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <MyProjectComp />
       <AboutComp />
       <ContactComp />
+      <FooterComp />
     </>
   );
 }
