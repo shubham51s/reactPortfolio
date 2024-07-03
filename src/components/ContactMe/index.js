@@ -3,6 +3,8 @@ import style from "./contactme.module.css";
 import PersonIcon from "@mui/icons-material/Person";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import EmailIcon from "@mui/icons-material/Email";
+import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 
 function ContactComp() {
   const [name, setName] = useState("");
@@ -59,6 +61,14 @@ function ContactComp() {
             </div>
             <div className={style.buttonMain}>
               <button className={style.submitBtn}>Submit</button>
+            </div>
+            <div className={style.contactMain}>
+              <EmailIcon />
+              <div>shubhamsolat51@gmail.com</div>
+            </div>
+            <div className={style.contactMain}>
+              <PermContactCalendarIcon />
+              <div>+91 9552144549</div>
             </div>
           </div>
         </div>
