@@ -3,9 +3,17 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
+  /* height: 100vh; */
+  /* min-height: 100vh; */
   background-color: rgb(20, 20, 35);
+}
+
+@media screen and (min-width: 767px) {
+  .outerContainer {
+    height: 100vh;
+    min-height: 100vh;
+    background-color: rgb(20, 20, 35);
+  }
 }
 
 .mainContainer {
@@ -121,8 +129,7 @@
 .socialMediaIconMain {
   transition: border 0.4s ease;
 }
-
-.socialMediaIconMain:hover {
+c .socialMediaIconMain:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -152,6 +159,12 @@
 
 .rightContent:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.contactHeading {
+  display: none;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .userDetails {
@@ -264,4 +277,46 @@ input[type="number"]::-webkit-inner-spin-button {
   transform: scale(1.02);
   font-weight: 600;
   border: 1px solid rgba(128, 128, 128, 1);
+}
+
+/* For mobile screens */
+
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .leftContent {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .rightContent {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .contactHeading {
+    display: block;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .userDetails {
+    width: 90%;
+    height: 50px;
+  }
+
+  .message {
+    width: 90%;
+  }
 }

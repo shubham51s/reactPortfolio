@@ -23,10 +23,10 @@ function ContactComp() {
               alt="get in touch"
               className={style.img}
             /> */}
-
+            <div className={style.contactHeading}>Contact Details</div>
             <div className={style.leftContentCard}>
               <div className={style.contactTitle}>Address</div>
-              <div className={style.contactContent}>Pune, Mahrashtra</div>
+              <div className={style.contactContent}>Pune, Maharashtra</div>
             </div>
             <div className={style.leftContentCard}>
               <div className={style.contactTitle}>Email</div>
@@ -50,6 +50,7 @@ function ContactComp() {
               </div>
             </div>
           </div>
+          <div className={style.contactHeading}>Let's Talk Now</div>
           <div className={style.rightContent}>
             <div className={style.userDetails}>
               <PersonIcon />
