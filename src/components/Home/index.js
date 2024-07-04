@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./homecomponent.module.css";
-import profileImg from "../../assets/profile picture gif.gif";
 
 function HomeComp() {
   return (
@@ -21,15 +20,18 @@ function HomeComp() {
                 A <span></span>
               </div>
               <div className={style.btnMain}>
+                <button className={style.btn}>Resume</button>
                 <button className={style.btn}>Contact Me</button>
               </div>
             </div>
           </div>
         </div>
         <div className={style.rightMainContainer}>
-          <div className={style.rightContent}>
-            <img className={style.profileImg} src={profileImg} alt="profile" />
-          </div>
+          <img
+            className={style.profileImg}
+            src="https://png.pngtree.com/png-vector/20231215/ourmid/pngtree-boy-computer-free-button-element-decorative-material-png-image_11355636.png"
+            alt="profile"
+          />
         </div>
       </div>
     </div>
