@@ -9,7 +9,11 @@ function AboutComp() {
         <div className={style.headingMain}>About Me</div>
         <div className={style.aboutContainer}>
           <div className={style.leftContent}>
-            <img className={style.aboutImg} src={aboutImg} alt="about svg" />
+            <img
+              className={style.aboutImg}
+              src="https://aryan0jain.github.io/Portfolio/images/about.apng"
+              alt="about svg"
+            />
           </div>
           <div className={style.rightContent}>
             <div className={style.aboutText}>
