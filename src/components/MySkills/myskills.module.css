@@ -116,4 +116,11 @@
     font-weight: 500;
     margin-top: 40px;
   }
+
+  .skillList {
+    gap: 5px;
+    width: 170px;
+    height: 100px;
+    border-radius: 5px;
+  }
 }
