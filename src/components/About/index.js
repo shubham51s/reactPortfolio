@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./aboutme.module.css";
-import aboutImg from "../../assets/aboutMe.gif";
 
 function AboutComp() {
   return (
