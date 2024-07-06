@@ -22,8 +22,12 @@ function MyProjectComp() {
                 trains & hotels with added functionality of offers, sorting,
                 searching & filters for seamless user experience.
               </p>
-              <p className={style.techNames}> </p>
-              <button className={style.viewBtn}>View Project</button>
+              <p className={style.techNames}>
+                <span className={style.skillTxt1}>#HTML </span>
+                <span className={style.skillTxt2}>#CSS </span>
+                <span className={style.skillTxt3}>#ReactJs</span>
+              </p>
+              <button className={style.viewBtn2}>View Project</button>
             </div>
           </div>
           <div className={style.cardList}>
@@ -41,7 +45,11 @@ function MyProjectComp() {
                 can be used in desktop, mobiles, tablet screen for seamless user
                 experience.
               </p>
-              <p className={style.techNames}>Tech used</p>
+              <p className={style.techNames}>
+                <span className={style.skillTxt1}>#HTML </span>
+                <span className={style.skillTxt2}>#CSS </span>
+                <span className={style.skillTxt3}>#NextJs</span>
+              </p>
               <button className={style.viewBtn}>View Project</button>
             </div>
           </div>
