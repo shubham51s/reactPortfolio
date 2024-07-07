@@ -47,7 +47,6 @@
   margin-top: 40px;
   font-weight: 500;
   width: 100%;
-  height: 20%;
 }
 
 @media screen and (min-width: 800px) {
@@ -61,7 +60,16 @@
   flex-direction: column;
   gap: 40px;
   align-items: center;
-  height: 80%;
+}
+
+@media screen and (min-width: 767px) {
+  .headingMain {
+    height: 20%;
+  }
+
+  .contentMain {
+    height: 80%;
+  }
 }
 
 .cardMain {
@@ -165,5 +173,74 @@
   .year {
     font-size: 20px;
     font-weight: 400;
+  }
+}
+
+/* For mobile screens */
+
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    width: 100%;
+  }
+  .headingMain {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .contentMain {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .cardMain {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: chocolate;
+  }
+
+  .collegeImg {
+    width: 100%;
+  }
+
+  .rightContainer {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .educationName {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .year {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cardMain {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: chocolate;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .educationName {
+    font-size: 16px;
+  }
+
+  .collegeName {
+    font-size: 14px;
+  }
+
+  .year {
+    font-size: 14px;
   }
 }
