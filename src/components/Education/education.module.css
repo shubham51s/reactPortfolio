@@ -1,0 +1,169 @@
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(20, 20, 35);
+}
+
+@media screen and (min-width: 767px) {
+  .outerContainer {
+    height: 100vh;
+    min-height: 100vh;
+  }
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 90%;
+  background-color: rgb(26, 26, 46);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mainContainer {
+  transition: border 0.4s ease;
+}
+
+.mainContainer:hover {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 800px) {
+  .mainContainer {
+    width: 90%;
+  }
+}
+
+.headingMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-weight: 500;
+  width: 100%;
+  height: 20%;
+}
+
+@media screen and (min-width: 800px) {
+  .headingMain {
+    font-size: 30px;
+  }
+}
+
+.contentMain {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  height: 80%;
+}
+
+.cardMain {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  background-color: chocolate;
+}
+
+.cardMain {
+  transition: all 0.4s ease;
+}
+
+.cardMain:hover {
+  transform: scale(1.02);
+}
+
+.collegeImg {
+  width: 30%;
+}
+
+@media screen and (min-width: 767px) {
+  .cardMain {
+    width: 90%;
+  }
+
+  .collegeImg {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cardMain {
+    width: 80%;
+  }
+
+  .collegeImg {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardMain {
+    width: 70%;
+  }
+
+  .collegeImg {
+    width: 30%;
+  }
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+.educationName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.collegeName {
+  font-size: 16px;
+}
+
+.year {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 767px) {
+  .educationName {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .collegeName {
+    font-size: 14px;
+  }
+
+  .year {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .educationName {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .collegeName {
+    font-size: 18px;
+  }
+
+  .year {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
