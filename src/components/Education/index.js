@@ -17,7 +17,7 @@ function MyEducationComp() {
             />
             <div className={style.rightContainer}>
               <div className={style.educationName}>
-                Bachelor's of Engineering in Mechanical
+                Bachelor of Engineering in Mechanical
               </div>
               <p className={style.collegeName}>
                 Everest College Of Engineering, Sambhajinagar
