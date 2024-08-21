@@ -16,18 +16,22 @@ function AboutComp() {
           </div>
           <div className={style.rightContent}>
             <div className={style.aboutText}>
-              I have completed by{" "}
-              <span>
-                BE in Mechanical Engineering from Everest College of
-                Engineering,
+              I have completed my
+              <span className={style.highlightTxt}>
+                {" "}
+                Bachelor of Engineering in Mechanical from Everest College of
+                Engineering,{" "}
               </span>
               having interest and skillset to be a part of your leading Tech
               Company. I have major interest in{" "}
-              <span>Front-End Development</span> & I wish to apply, enhance &
-              grow along with your esteemed Organization. I also have decent
-              command over <span>Back-End Technologies.</span> Being a
-              Responsible, Proactive and Team-player minded person will make me
-              undoubtedly a vital employee for your organization.
+              <span className={style.highlightTxt}>
+                Front-End Development
+              </span>{" "}
+              & I wish to apply, enhance & grow along with your esteemed
+              Organization. I also have decent command over{" "}
+              <span className={style.highlightTxt}>Back-End Technologies.</span>{" "}
+              Being a Responsible, Proactive and Team-player minded person will
+              make me undoubtedly a vital employee for your organization.
             </div>
           </div>
         </div>

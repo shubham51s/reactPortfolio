@@ -127,8 +127,9 @@
 .socialMediaIconMain {
   transition: border 0.4s ease;
 }
-c .socialMediaIconMain:hover {
+.socialMediaIconMain:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
 }
 
 .socialMediaIcon {

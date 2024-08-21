@@ -148,6 +148,11 @@
   font-size: 14px;
 }
 
+.highlightTxt {
+  /* font-weight: 500; */
+  color: rgb(238, 99, 60);
+}
+
 @media screen and (min-width: 500px) {
   .aboutText {
     font-size: 22px;

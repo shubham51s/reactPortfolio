@@ -131,15 +131,23 @@
 }
 
 .viewBtn {
-  background-color: red;
+  background-color: orangered;
   border: none;
   padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.4s ease;
 }
 
 .viewBtn2 {
-  background-color: red;
+  background-color: orangered;
   border: none;
   padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.4s ease;
 }
 
 @media screen and (min-width: 767px) {
@@ -152,6 +160,18 @@
   .viewBtn2 {
     margin-top: 44px;
   }
+}
+
+.viewBtn:hover {
+  background-color: white;
+  color: orangered;
+  cursor: pointer;
+}
+
+.viewBtn2:hover {
+  background-color: white;
+  color: orangered;
+  cursor: pointer;
 }
 
 /* Mobile screen responsiveness */

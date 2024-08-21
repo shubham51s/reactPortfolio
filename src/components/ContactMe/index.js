@@ -4,8 +4,8 @@ import PersonIcon from "@mui/icons-material/Person";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MessageIcon from "@mui/icons-material/Message";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function ContactComp() {
   const [name, setName] = useState("");
@@ -41,12 +41,24 @@ function ContactComp() {
             <div className={style.leftContentCard}>
               <div className={style.contactTitle}>Social Media</div>
               <div className={style.contactContent}>
-                <div className={style.socialMediaIconMain}>
-                  <FacebookIcon className={style.socialMediaIcon} />
-                </div>
-                <div className={style.socialMediaIconMain}>
-                  <InstagramIcon className={style.socialMediaIcon} />
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/shubham-solat-62b865167/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className={style.socialMediaIconMain}>
+                    <LinkedInIcon className={style.socialMediaIcon} />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/shubham51s"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className={style.socialMediaIconMain}>
+                    <GitHubIcon className={style.socialMediaIcon} />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

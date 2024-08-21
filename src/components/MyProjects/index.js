@@ -27,7 +27,13 @@ function MyProjectComp() {
                 <span className={style.skillTxt2}>#CSS </span>
                 <span className={style.skillTxt3}>#ReactJs</span>
               </p>
-              <button className={style.viewBtn2}>View Project</button>
+              <a
+                href="https://ixigo.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className={style.viewBtn2}>View Project</button>
+              </a>
             </div>
           </div>
           <div className={style.cardList}>
@@ -50,7 +56,13 @@ function MyProjectComp() {
                 <span className={style.skillTxt2}>#CSS </span>
                 <span className={style.skillTxt3}>#NextJs</span>
               </p>
-              <button className={style.viewBtn}>View Project</button>
+              <a
+                href="https://reddit-react-clone-react-project-2-y6yyb0r40hr5-dvl1.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className={style.viewBtn}>View Project</button>
+              </a>
             </div>
           </div>
         </div>

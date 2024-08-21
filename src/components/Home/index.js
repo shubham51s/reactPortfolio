@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./homecomponent.module.css";
+import resume from "../../assets/shubhamResume.pdf";
 
 function HomeComp() {
   return (
@@ -20,7 +21,10 @@ function HomeComp() {
                 A <span></span>
               </div>
               <div className={style.btnMain}>
-                <button className={style.btn}>Resume</button>
+                <a href={resume} download="Shubham_Resume.pdf">
+                  <button className={style.btn}>Resume</button>
+                </a>
+
                 <button className={style.btn}>Contact Me</button>
               </div>
             </div>
