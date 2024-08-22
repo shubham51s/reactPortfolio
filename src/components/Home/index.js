@@ -2,7 +2,7 @@ import React from "react";
 import style from "./homecomponent.module.css";
 import resume from "../../assets/shubhamResume.pdf";
 
-function HomeComp() {
+function HomeComp({ setActiveNav }) {
   return (
     <div className={style.outerContainer} id="homeSection">
       <div className={style.mainContainer}>
@@ -24,8 +24,9 @@ function HomeComp() {
                 <a href={resume} download="Shubham_Resume.pdf">
                   <button className={style.btn}>Resume</button>
                 </a>
-
-                <button className={style.btn}>Contact Me</button>
+                <a href="#contactSection" onClick={() => setActiveNav(6)}>
+                  <button className={style.btn}>Contact Me</button>
+                </a>
               </div>
             </div>
           </div>

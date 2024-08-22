@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./commonheader.module.css";
 
-function CommonHeader() {
-  const [activeNav, setActiveNav] = useState(1);
-
+function CommonHeader({ activeNav, setActiveNav }) {
   const handleNavClick = (val) => {
     setActiveNav(val);
   };
@@ -14,15 +12,21 @@ function CommonHeader() {
         {/* <div className={style.logoContainer}>
           <span className={style.name}>Shubham Solat</span>
         </div> */}
-        <div className={style.logoAnime}>
-          <span>S</span>
-          <span>h</span>
-          <span>u</span>
-          <span>b</span>
-          <span>h</span>
-          <span>a</span>
-          <span>m </span>
-        </div>
+        <a
+          href="#homeSection"
+          style={{ textDecoration: "none" }}
+          onClick={() => setActiveNav(1)}
+        >
+          <div className={style.logoAnime}>
+            <span>S</span>
+            <span>h</span>
+            <span>u</span>
+            <span>b</span>
+            <span>h</span>
+            <span>a</span>
+            <span>m </span>
+          </div>
+        </a>
         <div className={style.navContainer}>
           <a href="#homeSection" className={style.sectionLink}>
             <li
