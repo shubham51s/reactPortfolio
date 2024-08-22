@@ -13,4 +13,5 @@ code {
   padding: 0;
   color: white;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }

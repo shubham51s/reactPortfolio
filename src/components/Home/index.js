@@ -4,7 +4,7 @@ import resume from "../../assets/shubhamResume.pdf";
 
 function HomeComp() {
   return (
-    <div className={style.outerContainer}>
+    <div className={style.outerContainer} id="homeSection">
       <div className={style.mainContainer}>
         <div className={style.leftMainContainer}>
           <div className={style.leftContent}>

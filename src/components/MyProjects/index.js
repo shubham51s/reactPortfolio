@@ -5,7 +5,7 @@ import redditImg from "../../assets/reddit.png";
 
 function MyProjectComp() {
   return (
-    <div className={style.outerContainer}>
+    <div className={style.outerContainer} id="projectSection">
       <div className={style.mainContainer}>
         <div className={style.headingMain}>My Projects</div>
         <div className={style.projectContainer}>

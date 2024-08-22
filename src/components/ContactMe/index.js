@@ -13,7 +13,7 @@ function ContactComp() {
   const [num, setNum] = useState();
 
   return (
-    <div className={style.outerContainer}>
+    <div className={style.outerContainer} id="contactSection">
       <div className={style.mainContainer}>
         <div className={style.headingMain}>Get in touch</div>
         <div className={style.mainContent}>

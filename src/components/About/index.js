@@ -3,7 +3,7 @@ import style from "./aboutme.module.css";
 
 function AboutComp() {
   return (
-    <div className={style.outerContainer}>
+    <div className={style.outerContainer} id="aboutSection">
       <div className={style.mainContainer}>
         <div className={style.headingMain}>About Me</div>
         <div className={style.aboutContainer}>

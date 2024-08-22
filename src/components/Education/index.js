@@ -5,7 +5,7 @@ import diplomaCollegeImg from "../../assets/Kssed polytechnic.png";
 
 function MyEducationComp() {
   return (
-    <div className={style.outerContainer}>
+    <div className={style.outerContainer} id="educationSection">
       <div className={style.mainContainer}>
         <div className={style.headingMain}>My Education</div>
         <div className={style.contentMain}>

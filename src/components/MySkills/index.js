@@ -12,7 +12,7 @@ import mongodbPng from "../../assets/mongodb_original_logo_icon_146424.png";
 
 function MySkillsComp() {
   return (
-    <div className={style.outerContainer}>
+    <div className={style.outerContainer} id="skillSection">
       <div className={style.mainContainer}>
         <div className={style.headingMain}>My Skills</div>
         <div className={style.skillsContent}>
