@@ -13,8 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10px;
-  margin-left: 10px;
   margin-right: 80px;
   margin-left: 80px;
   width: 95%;
@@ -130,6 +128,68 @@
   align-items: center;
 }
 
+.menuIcon {
+  display: none;
+  margin-right: 20px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.menuContent {
+  display: none;
+  position: fixed;
+  top: 65px;
+  right: 10px;
+  width: 50%;
+  z-index: 999;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.moreOptionContainer {
+  display: none;
+}
+
+.menuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 0;
+  /* background-color: rgb(20, 20, 35); */
+  background-color: rgb(3, 3, 17);
+  color: white;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menuList {
+  transition: all 0.4s ease;
+}
+
+.menuList:hover {
+  color: orangered;
+}
+
+.activeMenuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 0;
+  color: orangered;
+  font-weight: 700;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgb(3, 3, 17);
+}
+
 .navListItem {
   list-style: none;
   margin-left: 10px;
@@ -158,4 +218,32 @@
 
 .sectionLink {
   text-decoration: none;
+}
+
+/* Mobile screens */
+
+@media screen and (max-width: 767px) {
+  .moreOptionContainer {
+    display: block;
+  }
+
+  .menuIcon {
+    display: block;
+    margin-right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  .menuContent {
+    display: block;
+  }
+
+  .navContainer {
+    display: none;
+  }
+
+  .mainContainer {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
