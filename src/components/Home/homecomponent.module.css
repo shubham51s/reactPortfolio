@@ -298,6 +298,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    height: 60%;
   }
 
   .rightMainContainer {
@@ -305,7 +306,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    height: 40%;
+    margin-top: 50px;
   }
 
   .leftContent {
@@ -341,6 +343,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
   }
 }
