@@ -21,7 +21,7 @@ function HomeComp({ setActiveNav }) {
                 A <span></span>
               </div>
               <div className={style.btnMain}>
-                <a href={resume} download="Shubham_Resume.pdf">
+                <a href={resume} target="_blank" rel="noopener noreferrer">
                   <button className={style.btn}>Resume</button>
                 </a>
                 <a href="#contactSection" onClick={() => setActiveNav(6)}>

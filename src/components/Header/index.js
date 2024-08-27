@@ -36,9 +36,6 @@ function CommonHeader({ activeNav, setActiveNav }) {
   return (
     <div className={style.outerContainer}>
       <div className={style.mainContainer}>
-        {/* <div className={style.logoContainer}>
-          <span className={style.name}>Shubham Solat</span>
-        </div> */}
         <a
           href="#homeSection"
           style={{ textDecoration: "none" }}
