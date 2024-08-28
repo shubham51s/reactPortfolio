@@ -212,6 +212,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   background-color: rgb(20, 20, 35);
+  padding-top: 5px;
 }
 
 .message {
@@ -276,6 +277,10 @@ input[type="number"]::-webkit-inner-spin-button {
   transform: scale(1.02);
   font-weight: 600;
   border: 1px solid rgba(128, 128, 128, 1);
+}
+
+.inputIcons {
+  padding-left: 5px;
 }
 
 /* For mobile screens */

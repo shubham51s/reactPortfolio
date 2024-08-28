@@ -6,11 +6,37 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MessageIcon from "@mui/icons-material/Message";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import emailjs from "@emailjs/browser";
 
 function ContactComp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [num, setNum] = useState();
+  const [num, setNum] = useState(0);
+  const [userMessage, setUserMessage] = useState("");
+
+  const handleSendEmail = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      user_name: name,
+      user_email: email,
+      user_mobile: num,
+      message: userMessage,
+    };
+
+    emailjs
+      .send("service_63derok", "template_dl870lg", templateParams, {
+        publicKey: "5AmLxCV5OPqVqNXnKMA26",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
 
   return (
     <div className={style.outerContainer} id="contactSection">
@@ -65,51 +91,57 @@ function ContactComp() {
           <div className={style.contactHeading}>Let's Talk Now</div>
           <div className={style.rightContent}>
             <div className={style.userDetails}>
-              <PersonIcon />
+              <PersonIcon className={style.inputIcons} />
               <input
                 className={style.userInput}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                name="user_name"
                 type="text"
                 placeholder="Name"
               />
             </div>
             <div className={style.userDetails}>
-              <MarkunreadIcon />
+              <MarkunreadIcon className={style.inputIcons} />
               <input
                 className={style.userInput}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                name="user_email"
                 type="text"
                 placeholder="Email"
               />
             </div>
             <div className={style.userDetails}>
-              <LocalPhoneIcon />
+              <LocalPhoneIcon className={style.inputIcons} />
               <input
                 className={style.userInput}
                 value={num}
                 onChange={(e) => setNum(e.target.value)}
+                name="user_mobile"
                 type="number"
                 maxLength={10}
                 placeholder="Mobile Number"
               />
             </div>
             <div className={style.message}>
-              <MessageIcon />
-              <textarea className={style.messageInp} placeholder="Message" />
+              <MessageIcon className={style.inputIcons} />
+              <textarea
+                className={style.messageInp}
+                value={userMessage}
+                onChange={(e) => setUserMessage(e.target.value)}
+                placeholder="Message"
+                name="message"
+              />
             </div>
             <div className={style.buttonMain}>
-              <button className={style.submitBtn}>SEND MESSAGE</button>
+              <button
+                className={style.submitBtn}
+                onClick={(e) => handleSendEmail(e)}
+              >
+                SEND MESSAGE
+              </button>
             </div>
-            {/* <div className={style.contactMain}>
-              <EmailIcon />
-              <div>shubhamsolat51@gmail.com</div>
-            </div>
-            <div className={style.contactMain}>
-              <PermContactCalendarIcon />
-              <div>+91 9552144549</div>
-            </div> */}
           </div>
         </div>
       </div>

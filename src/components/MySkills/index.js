@@ -52,14 +52,14 @@ function MySkillsComp() {
             <img className={style.langImg} src={expressjsPng} alt="ExpressJs" />
             <p className={style.langName}>ExpressJs</p>
           </div>
-          <div className={style.skillList}>
+          {/* <div className={style.skillList}>
             <img className={style.langImg} src={mongodbPng} alt="MongoDB" />
             <p className={style.langName}>MongoDB</p>
           </div>
           <div className={style.skillList}>
             <img className={style.langImg} src={javaLogo} alt="Java" />
             <p className={style.langName}>Java</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
