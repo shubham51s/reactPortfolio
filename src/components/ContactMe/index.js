@@ -40,7 +40,7 @@ function ContactComp() {
 
       emailjs
         .send("service_63derok", "template_dl870lg", templateParams, {
-          publicKey: "5AmLxCV5OPqVqNXnKMA26",
+          publicKey: "TyHg-1uofxmmyhpg_",
         })
         .then(
           () => {
