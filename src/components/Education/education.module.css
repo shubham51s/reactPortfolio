@@ -85,6 +85,7 @@
 
 .cardMain:hover {
   transform: scale(1.02);
+  box-shadow: 5px 5px 10px rgb(20, 20, 35);
 }
 
 .collegeImg {
