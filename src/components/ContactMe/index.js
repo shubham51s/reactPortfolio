@@ -7,35 +7,57 @@ import MessageIcon from "@mui/icons-material/Message";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 function ContactComp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [num, setNum] = useState(0);
+  const [num, setNum] = useState(91);
   const [userMessage, setUserMessage] = useState("");
+
+  const notify = () => toast.success("Message sent!");
+
+  const notifyWarning = (text) => toast.warn(text);
+
+  const notifyError = () => toast.error("Something went wrong");
 
   const handleSendEmail = (e) => {
     e.preventDefault();
 
-    const templateParams = {
-      user_name: name,
-      user_email: email,
-      user_mobile: num,
-      message: userMessage,
-    };
+    if (name.length <= 2) {
+      notifyWarning("Please enter a valid name");
+    } else if (email.length <= 10 || !email.includes("@gmail.com")) {
+      notifyWarning("Please enter a valid email address");
+    } else if (userMessage.length <= 2) {
+      notifyWarning("Please enter a message");
+    } else {
+      const templateParams = {
+        user_name: name,
+        user_email: email,
+        user_mobile: num,
+        message: userMessage,
+      };
 
-    emailjs
-      .send("service_63derok", "template_dl870lg", templateParams, {
-        publicKey: "5AmLxCV5OPqVqNXnKMA26",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      emailjs
+        .send("service_63derok", "template_dl870lg", templateParams, {
+          publicKey: "5AmLxCV5OPqVqNXnKMA26",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            notify();
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            notifyError();
+          }
+        );
+
+      setName("");
+      setEmail("");
+      setNum(91);
+      setUserMessage("");
+    }
   };
 
   return (
