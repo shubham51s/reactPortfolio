@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./aboutme.module.css";
 
-function AboutComp() {
+function AboutComp({ aboutRef }) {
   return (
-    <div className={style.outerContainer} id="aboutSection">
+    <div className={style.outerContainer} id="aboutSection" ref={aboutRef}>
       <div className={style.mainContainer}>
         <div className={style.headingMain}>About Me</div>
         <div className={style.aboutContainer}>

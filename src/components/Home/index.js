@@ -2,9 +2,9 @@ import React from "react";
 import style from "./homecomponent.module.css";
 import resume from "../../assets/shubhamResume.pdf";
 
-function HomeComp({ setActiveNav }) {
+function HomeComp({ setActiveNav, homeRef }) {
   return (
-    <div className={style.outerContainer} id="homeSection">
+    <div className={style.outerContainer} id="homeSection" ref={homeRef}>
       <div className={style.mainContainer}>
         <div className={style.leftMainContainer}>
           <div className={style.leftContent}>

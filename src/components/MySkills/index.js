@@ -10,9 +10,9 @@ import expressjsPng from "../../assets/expressJs.png";
 import nodejsPng from "../../assets/nodejs_plain_logo_icon_146409.png";
 import mongodbPng from "../../assets/mongodb_original_logo_icon_146424.png";
 
-function MySkillsComp() {
+function MySkillsComp({ skillsRef }) {
   return (
-    <div className={style.outerContainer} id="skillSection">
+    <div className={style.outerContainer} id="skillSection" ref={skillsRef}>
       <div className={style.mainContainer}>
         <div className={style.headingMain}>My Skills</div>
         <div className={style.skillsContent}>

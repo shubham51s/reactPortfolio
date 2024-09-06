@@ -3,9 +3,9 @@ import style from "./myprojects.module.css";
 import ixigoImg from "../../assets/ixigo.png";
 import redditImg from "../../assets/reddit.png";
 
-function MyProjectComp() {
+function MyProjectComp({ projectRef }) {
   return (
-    <div className={style.outerContainer} id="projectSection">
+    <div className={style.outerContainer} id="projectSection" ref={projectRef}>
       <div className={style.mainContainer}>
         <div className={style.headingMain}>My Projects</div>
         <div className={style.projectContainer}>

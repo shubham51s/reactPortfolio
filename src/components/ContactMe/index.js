@@ -9,7 +9,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
-function ContactComp() {
+function ContactComp({ contactRef }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [num, setNum] = useState(91);
@@ -61,7 +61,7 @@ function ContactComp() {
   };
 
   return (
-    <div className={style.outerContainer} id="contactSection">
+    <div className={style.outerContainer} id="contactSection" ref={contactRef}>
       <div className={style.mainContainer}>
         <div className={style.headingMain}>Get in touch</div>
         <div className={style.mainContent}>

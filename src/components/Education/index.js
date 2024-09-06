@@ -3,9 +3,13 @@ import style from "./education.module.css";
 import everestImg from "../../assets/Campus View of Everest College of Engineering and Technology Aurangabad_Campus-View.jpg";
 import diplomaCollegeImg from "../../assets/Kssed polytechnic.png";
 
-function MyEducationComp() {
+function MyEducationComp({ educationRef }) {
   return (
-    <div className={style.outerContainer} id="educationSection">
+    <div
+      className={style.outerContainer}
+      id="educationSection"
+      ref={educationRef}
+    >
       <div className={style.mainContainer}>
         <div className={style.headingMain}>My Education</div>
         <div className={style.contentMain}>
