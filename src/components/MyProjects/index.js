@@ -9,7 +9,11 @@ function MyProjectComp({ projectRef }) {
     <div className={style.outerContainer} id="projectSection" ref={projectRef}>
       <div className={style.mainContainer}>
         <div className={style.headingMain}>
-          <TaskAltIcon className={style.headingIcon} /> My Projects
+          <TaskAltIcon
+            className={style.headingIcon}
+            style={{ fontSize: "36px" }}
+          />{" "}
+          My Projects
         </div>
         <div className={style.projectContainer}>
           <div className={style.cardList}>

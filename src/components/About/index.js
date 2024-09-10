@@ -7,7 +7,11 @@ function AboutComp({ aboutRef }) {
     <div className={style.outerContainer} id="aboutSection" ref={aboutRef}>
       <div className={style.mainContainer}>
         <div className={style.headingMain}>
-          <PersonIcon className={style.headingIcon} /> About Me
+          <PersonIcon
+            className={style.headingIcon}
+            style={{ fontSize: "36px" }}
+          />{" "}
+          About Me
         </div>
         <div className={style.aboutContainer}>
           <div className={style.leftContent}>

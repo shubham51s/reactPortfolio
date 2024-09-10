@@ -13,7 +13,10 @@ function MyEducationComp({ educationRef }) {
     >
       <div className={style.mainContainer}>
         <div className={style.headingMain}>
-          <SchoolIcon className={style.headingIcon} />
+          <SchoolIcon
+            className={style.headingIcon}
+            style={{ fontSize: "36px" }}
+          />
           My Education
         </div>
         <div className={style.contentMain}>

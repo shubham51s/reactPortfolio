@@ -8,7 +8,6 @@ import reactPng from "../../assets/React.png";
 import nextjsPng from "../../assets/NextJS.png";
 import expressjsPng from "../../assets/expressJs.png";
 import nodejsPng from "../../assets/nodejs_plain_logo_icon_146409.png";
-import mongodbPng from "../../assets/mongodb_original_logo_icon_146424.png";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
 function MySkillsComp({ skillsRef }) {
@@ -16,7 +15,11 @@ function MySkillsComp({ skillsRef }) {
     <div className={style.outerContainer} id="skillSection" ref={skillsRef}>
       <div className={style.mainContainer}>
         <div className={style.headingMain}>
-          <BusinessCenterIcon className={style.headingIcon} /> My Skills
+          <BusinessCenterIcon
+            className={style.headingIcon}
+            style={{ fontSize: "36px", fontWeight: "100" }}
+          />{" "}
+          My Skills
         </div>
         <div className={style.skillsContent}>
           <div className={style.skillList}>

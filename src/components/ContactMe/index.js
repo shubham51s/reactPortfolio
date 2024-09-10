@@ -65,8 +65,11 @@ function ContactComp({ contactRef }) {
     <div className={style.outerContainer} id="contactSection" ref={contactRef}>
       <div className={style.mainContainer}>
         <div className={style.headingMain}>
-          <ConnectWithoutContactIcon className={style.headingIcon} /> Get in
-          touch
+          <ConnectWithoutContactIcon
+            className={style.headingIcon}
+            style={{ fontSize: "36px" }}
+          />
+          Get in touch
         </div>
         <div className={style.mainContent}>
           <div className={style.leftContent}>
