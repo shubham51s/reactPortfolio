@@ -58,7 +58,7 @@ function MyEducationComp({ educationRef }) {
             />
             <div className={style.rightContainer}>
               <div className={style.educationName}>
-                Diploma in Mechanical Enggineering
+                Diploma in Mechanical Engineering
               </div>
               <p className={style.collegeName}>KSSED Polytechnic, Shevgaon</p>
               <p className={style.year}>2014-17</p>
