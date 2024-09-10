@@ -2,12 +2,15 @@ import React from "react";
 import style from "./myprojects.module.css";
 import ixigoImg from "../../assets/ixigo.png";
 import redditImg from "../../assets/reddit.png";
+import TaskAltIcon from "@mui/icons-material/TaskAlt";
 
 function MyProjectComp({ projectRef }) {
   return (
     <div className={style.outerContainer} id="projectSection" ref={projectRef}>
       <div className={style.mainContainer}>
-        <div className={style.headingMain}>My Projects</div>
+        <div className={style.headingMain}>
+          <TaskAltIcon className={style.headingIcon} /> My Projects
+        </div>
         <div className={style.projectContainer}>
           <div className={style.cardList}>
             <div className={style.cardContent}>

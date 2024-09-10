@@ -8,6 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
 
 function ContactComp({ contactRef }) {
   const [name, setName] = useState("");
@@ -63,7 +64,10 @@ function ContactComp({ contactRef }) {
   return (
     <div className={style.outerContainer} id="contactSection" ref={contactRef}>
       <div className={style.mainContainer}>
-        <div className={style.headingMain}>Get in touch</div>
+        <div className={style.headingMain}>
+          <ConnectWithoutContactIcon className={style.headingIcon} /> Get in
+          touch
+        </div>
         <div className={style.mainContent}>
           <div className={style.leftContent}>
             {/* <img

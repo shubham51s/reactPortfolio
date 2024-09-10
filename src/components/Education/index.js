@@ -2,6 +2,7 @@ import React from "react";
 import style from "./education.module.css";
 import everestImg from "../../assets/Campus View of Everest College of Engineering and Technology Aurangabad_Campus-View.jpg";
 import diplomaCollegeImg from "../../assets/Kssed polytechnic.png";
+import SchoolIcon from "@mui/icons-material/School";
 
 function MyEducationComp({ educationRef }) {
   return (
@@ -11,7 +12,10 @@ function MyEducationComp({ educationRef }) {
       ref={educationRef}
     >
       <div className={style.mainContainer}>
-        <div className={style.headingMain}>My Education</div>
+        <div className={style.headingMain}>
+          <SchoolIcon className={style.headingIcon} />
+          My Education
+        </div>
         <div className={style.contentMain}>
           <div className={style.cardMain}>
             <img

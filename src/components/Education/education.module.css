@@ -49,9 +49,49 @@
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+.headingIcon {
+  font-size: 26px;
+  margin-right: 20px;
+  animation-name: updown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (min-width: 500px) {
   .headingMain {
     font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .headingIcon {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .headingMain {
+    font-size: 36px;
+  }
+
+  .headingIcon {
+    font-size: 36px;
   }
 }
 

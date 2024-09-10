@@ -1,11 +1,14 @@
 import React from "react";
 import style from "./aboutme.module.css";
+import PersonIcon from "@mui/icons-material/Person";
 
 function AboutComp({ aboutRef }) {
   return (
     <div className={style.outerContainer} id="aboutSection" ref={aboutRef}>
       <div className={style.mainContainer}>
-        <div className={style.headingMain}>About Me</div>
+        <div className={style.headingMain}>
+          <PersonIcon className={style.headingIcon} /> About Me
+        </div>
         <div className={style.aboutContainer}>
           <div className={style.leftContent}>
             <img
