@@ -23,6 +23,20 @@ function MyEducationComp({ educationRef }) {
           <div className={style.cardMain}>
             <img
               className={style.collegeImg}
+              src="https://images.indianexpress.com/2022/12/NewtonSchool_LEAD.jpg?w=414"
+              alt="newton school"
+            />
+            <div className={style.rightContainer}>
+              <div className={style.educationName}>
+                Full Stack Web Development
+              </div>
+              <p className={style.collegeName}>Newton School, Online</p>
+              <p className={style.year}>2023-24</p>
+            </div>
+          </div>
+          <div className={style.cardMain}>
+            <img
+              className={style.collegeImg}
               src={everestImg}
               alt="Everest college"
             />
