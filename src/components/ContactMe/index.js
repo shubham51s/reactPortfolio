@@ -13,7 +13,7 @@ import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact
 function ContactComp({ contactRef }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [num, setNum] = useState(91);
+  const [num, setNum] = useState("");
   const [userMessage, setUserMessage] = useState("");
 
   const notify = () => toast.success("Message sent!");
@@ -56,7 +56,7 @@ function ContactComp({ contactRef }) {
 
       setName("");
       setEmail("");
-      setNum(91);
+      setNum("");
       setUserMessage("");
     }
   };
@@ -150,7 +150,7 @@ function ContactComp({ contactRef }) {
                 name="user_mobile"
                 type="number"
                 maxLength={10}
-                placeholder="Mobile Number"
+                placeholder="Mobile No (optional)"
               />
             </div>
             <div className={style.message}>
