@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./homecomponent.module.css";
-import resume from "../../assets/shubhams.pdf";
+import resume from "../../assets/shubham.pdf";
 
 function HomeComp({ setActiveNav, homeRef }) {
   return (
